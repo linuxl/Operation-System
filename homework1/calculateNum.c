@@ -1,3 +1,4 @@
+#include "calculateNum.h"
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,8 +6,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
-#include "calculateNum.h"
-
 
 void generateData(void **array, unsigned long n, int m, int flag) {
   /* generate random data
@@ -165,19 +164,18 @@ void multiThreadCalculateExit(int element, int target[], int length,
 }
 
 int main() {
-  int m = 200; // the range of number
-  unsigned long N[] = {256, 262144, 2097152,4194304}; // the array number
+  int m = 200;                                         // the range of number
+  unsigned long N[] = {256, 262144, 2097152, 4194304}; // the array number
 
   int M[] = {2, 4, 8};
-  for (int i = 0; i < 4; i++)
-  {
+  for (int i = 0; i < 4; i++) {
     void *num;
     generateData(&num, N[i], m, 1);
     int *number = (int *)num;
     // Limit the number of elements to be queried
     srand((unsigned)time(NULL));
     int randNum = rand() % 240 + 1;
-    for (int k = 20; k<= randNum; k++){
+    for (int k = 20; k <= randNum; k++) {
       number[k] = 300;
     }
     printf("--------------array size: %ld----------\n", N[i]);
@@ -186,7 +184,7 @@ int main() {
     calculate(300, number, N[i]);
     printf("------------------------\n");
     printf("multi-process and multi thread result\n");
-    for (int j = 0; j <3 ; j++) {
+    for (int j = 0; j < 3; j++) {
       printf("------------------------\n");
       multiProcessCalculate(300, number, N[i], M[j]);
       printf("-------------------------\n");
