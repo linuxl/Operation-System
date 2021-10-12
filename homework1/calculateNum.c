@@ -5,7 +5,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
-#include "hw1.h"
+#include "calculateNum.h"
 
 
 void generateData(void **array, unsigned long n, int m, int flag) {
