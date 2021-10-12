@@ -174,19 +174,23 @@ int main() {
     void *num;
     generateData(&num, N[i], m, 1);
     int *number = (int *)num;
+    // Limit the number of elements to be queried
+    for (int k = 20; k<= 40; k++){
+      number[k] = 300;
+    }
     printf("--------------array size: %ld----------\n", N[i]);
     printf("One process result\n");
     printf("------------------------\n");
-    calculate(*(number + 10), number, N[i]);
+    calculate(300, number, N[i]);
     printf("------------------------\n");
     printf("multi-process and multi thread result\n");
     for (int j = 0; j <3 ; j++) {
       printf("------------------------\n");
-      multiProcessCalculate(*(number + 10), number, N[i], M[j]);
+      multiProcessCalculate(300, number, N[i], M[j]);
       printf("-------------------------\n");
-      multiThreadCalculateLock(*(number + 10), number, N[i], M[j]);
+      multiThreadCalculateLock(300, number, N[i], M[j]);
       printf("-------------------------\n");
-      multiThreadCalculateExit(*(number + 10), number, N[i], M[j]);
+      multiThreadCalculateExit(300, number, N[i], M[j]);
     }
     printf("------------------------------------------\n");
 

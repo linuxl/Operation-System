@@ -57,8 +57,8 @@ The following list shows the execution times for different array sizes
     **Analysis:**
     1. With an array length of 262144, multi-process resource requests and scheduling consume most of the time, so performance is still inferior to single-process performance.
     2. The time consumed by thread scheduling during multi-threaded execution is already negligible with an array length of 262144, so multi-threaded programs perform better than single and multi-process programs.
-    3. The use of locks in multithreading may result in a thread-wait situation, so the performance of programs using locks is not as good as that of programs not using locks
-
+    3. The use of locks in multithreading may result in a thread-wait situation, so the performance of programs using locks is not as good as that of programs not using locks.
+   
 * **Array length: 2097152**
   Single process execution time: 6.291 (ms) the element number is: 10753.
   * multi-process and multi-threads execution time table list:
@@ -69,6 +69,12 @@ The following list shows the execution times for different array sizes
     4  | 5.498 | 4.333 | 4.022
     8  | 4.551 | 4.013 | 2.413
 
+    **Analysis:**
+    1. When the array length reaches 2097152, the resource request and scheduling time of the multiprocess process is negligible, so the performance of the multiprocess program starts to exceed that of the single process.
+    2. Multi-threaded programs do not need to request additional resources compared to multi-processed programs so multi-threaded programs perform better than multi-processed programs.
+    3. Multi-threaded programs that do not use locks do not create a thread wait situation, so programs that do not use locks perform better than those that do.
+
+
 * **Array length: 4194304**
   Single process execution time: 12.48 (ms) the element number is: 20941.
   * multi-process and multi-threads execution time table list:
@@ -78,6 +84,12 @@ The following list shows the execution times for different array sizes
     2  | 9.214 | 8.75 | 8.26
     4  | 5.961 | 7.162 | 4.263
     8  | 8.746 | 7.472 | 5.249
+
+    **Analysis:**
+    1. When the array length reaches 4194304, the advantages of multi-processing and multi-threading start to become apparent.
+    2. Since the cpu has 4 logical cores, ideally 4 process programs and 4 threaded programs run on separate cores, so the best performance is achieved when the number of processes or threads is 4.
+    3. With a process or thread count of 2, CPU resources are not fully utilized, so performance is not as good as with 4 processes or threads
+    4. With a process or thread count of 8, two processes or threads are allocated on each CPU and the CPU needs to do process or thread scheduling, causing the process or thread to go into a block state, so performance is not as good as with a process or thread count of 4.
 
 
 
