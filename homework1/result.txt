@@ -3,17 +3,17 @@ One process result
 ------------------------
 single process
 time used: 0.001000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------
 multi-process and multi thread result
 ------------------------
 Multi-process number: 2
 time used: 0.246000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (global) number: 2
 time used: 0.082000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (exit) number: 2
 time used: 0.221000 (ms)
@@ -21,162 +21,162 @@ the element number is: 21
 ------------------------
 Multi-process number: 4
 time used: 0.705000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (global) number: 4
 time used: 0.668000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (exit) number: 4
 time used: 0.082000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------
 Multi-process number: 8
 time used: 0.695000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (global) number: 8
 time used: 0.178000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (exit) number: 8
 time used: 0.208000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------------------------
 --------------array size: 262144----------
 One process result
 ------------------------
 single process
 time used: 0.830000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------
 multi-process and multi thread result
 ------------------------
 Multi-process number: 2
 time used: 0.710000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (global) number: 2
 time used: 0.384000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (exit) number: 2
 time used: 0.377000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------
 Multi-process number: 4
 time used: 0.628000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (global) number: 4
 time used: 0.305000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (exit) number: 4
 time used: 0.413000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------
 Multi-process number: 8
 time used: 0.874000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (global) number: 8
 time used: 0.426000 (ms)
-the element number is: 21
+the element number is: 31
 -------------------------
 Multi-Tread (exit) number: 8
 time used: 0.408000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------------------------
 --------------array size: 2097152----------
 One process result
 ------------------------
 single process
 time used: 6.315000 (ms)
-the element number is: 21
+the element number is: 29
 ------------------------
 multi-process and multi thread result
 ------------------------
 Multi-process number: 2
 time used: 4.832000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (global) number: 2
 time used: 4.030000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (exit) number: 2
 time used: 2.859000 (ms)
-the element number is: 21
+the element number is: 29
 ------------------------
 Multi-process number: 4
 time used: 3.153000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (global) number: 4
 time used: 2.232000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (exit) number: 4
 time used: 2.100000 (ms)
-the element number is: 21
+the element number is: 29
 ------------------------
 Multi-process number: 8
 time used: 3.878000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (global) number: 8
 time used: 2.819000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (exit) number: 8
 time used: 2.312000 (ms)
-the element number is: 21
+the element number is: 29
 ------------------------------------------
 --------------array size: 4194304----------
 One process result
 ------------------------
 single process
 time used: 12.022000 (ms)
-the element number is: 21
+the element number is: 29
 ------------------------
 multi-process and multi thread result
 ------------------------
 Multi-process number: 2
 time used: 10.114000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (global) number: 2
 time used: 5.702000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (exit) number: 2
 time used: 5.650000 (ms)
-the element number is: 21
+the element number is: 29
 ------------------------
 Multi-process number: 4
 time used: 5.477000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (global) number: 4
 time used: 5.198000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (exit) number: 4
 time used: 4.365000 (ms)
-the element number is: 21
+the element number is: 29
 ------------------------
 Multi-process number: 8
 time used: 6.430000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (global) number: 8
 time used: 4.671000 (ms)
-the element number is: 21
+the element number is: 29
 -------------------------
 Multi-Tread (exit) number: 8
 time used: 4.154000 (ms)
-the element number is: 21
+the element number is: 29
 
 
 

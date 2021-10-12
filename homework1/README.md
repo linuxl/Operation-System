@@ -32,7 +32,7 @@ Number of threads |   2, 4, 8
 The following list shows the execution times for different array sizes
 
 * **Array length: 256**
-   Single process execution time: 0.001 (ms). the element number is: 21
+   Single process execution time: 0.001 (ms). the element number is: 31
   * multi-process and multi-threads execution time table list:
 
     Number of processes/threads | Used times (ms)<br> (process) | Used times (ms)<br> (thread with mutex) | Used times (ms)<br> (thread without mutex) |
@@ -48,7 +48,7 @@ The following list shows the execution times for different array sizes
   
 
 * **Array length: 262144**
-    Single process execution time: 0.83 (ms) the element number is: 21.
+    Single process execution time: 0.83 (ms) the element number is: 31.
   * multi-process and multi-threads execution time table list:
 
     Number of processes/threads | Used times (ms)<br> (process) | Used times (ms)<br> (thread with mutex) | Used times (ms)<br> (thread without mutex) |
@@ -63,7 +63,7 @@ The following list shows the execution times for different array sizes
     3. The use of locks in multithreading may result in a thread-wait situation, so the performance of programs using locks is not as good as that of programs not using locks.
    
 * **Array length: 2097152**
-  Single process execution time: 6.315 (ms) the element number is: 21.
+  Single process execution time: 6.315 (ms) the element number is: 29.
   * multi-process and multi-threads execution time table list:
 
     Number of processes/threads | Used times (ms)<br> (process) | Used times (ms)<br> (thread with mutex) | Used times (ms)<br> (thread without mutex) |
@@ -79,7 +79,7 @@ The following list shows the execution times for different array sizes
 
 
 * **Array length: 4194304**
-  Single process execution time: 12.022 (ms) the element number is: 21.
+  Single process execution time: 12.022 (ms) the element number is: 29.
   * multi-process and multi-threads execution time table list:
 
     Number of processes/threads | Used times (ms)<br> (process) | Used times (ms)<br> (thread with mutex) | Used times (ms)<br> (thread without mutex) |
