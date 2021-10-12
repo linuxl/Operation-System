@@ -17,7 +17,7 @@ the element number is: 31
 -------------------------
 Multi-Tread (exit) number: 2
 time used: 0.221000 (ms)
-the element number is: 21
+the element number is: 31
 ------------------------
 Multi-process number: 4
 time used: 0.705000 (ms)

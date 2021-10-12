@@ -61,7 +61,7 @@ The following list shows the execution times for different array sizes
     1. With an array length of 262144, multi-process resource requests and scheduling consume most of the time, so performance is about the same as single-process performance.
     2. The time consumed by thread scheduling during multi-threaded execution is already negligible with an array length of 262144, so multi-threaded programs perform better than single and multi-process programs.
     3. The use of locks in multithreading may result in a thread-wait situation, so the performance of programs using locks is not as good as that of programs not using locks.
-   
+
 * **Array length: 2097152**
   Single process execution time: 6.315 (ms) the element number is: 29.
   * multi-process and multi-threads execution time table list:
