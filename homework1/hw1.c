@@ -166,7 +166,7 @@ void multiThreadCalculateExit(int element, int target[], int length,
 
 int main() {
   int m = 200; // the range of number
-  unsigned long N[] = {256, 1048576, 2097152}; // the array number
+  unsigned long N[] = {256, 262144, 2097152}; // the array number
 
   int M[] = {2, 4, 8};
   for (int i = 0; i < 3; i++)
