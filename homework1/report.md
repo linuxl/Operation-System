@@ -16,7 +16,8 @@ output: "homework_1"
 ## The measurement result
 
 I generate random arrays of integers of different lengths. The execution times of the query elements measured under single process and single thread conditions were used as a control group to measure the execution times under different process and thread conditions. 
-使用 taskset -c 0,1,2,3 绑定到所有CPU上执行
+
+To better represent the parallelization of multi-process and multi-linear processing, the test program uses "taskset -c 0, 1, 2, 3" to bind the 4 logical cores of the CPU
 
 The parameters are listed in the table below.
 |   information   |            |
@@ -36,6 +37,11 @@ The following list shows the execution times for different array sizes
     2  | 0.726 |0.271 |  0.467
     4  | 0.91 |0.23 | 0.178
     8  | 1.517 |0.421 | 0.575
+
+    **Analysis:**
+    1. With an array length of 256, the single-process program performs well because the calculation itself is not too complex.
+    2. Multi-processes require a certain amount of time for resource requests and process scheduling compared to single-processes, so performance is not as good as single-process programs.
+    3. Multi-threading requires a certain amount of thread scheduling time compared to single process so performance is not as good as single-process programs.
   
 
 * **Array length: 262144**
@@ -47,6 +53,11 @@ The following list shows the execution times for different array sizes
     2  | 0.829 | 0.615 | 0.479
     4  | 1.766 | 0.491 | 0.31
     8  | 0.924 | 0.495 | 0.40
+  
+    **Analysis:**
+    1. With an array length of 262144, multi-process resource requests and scheduling consume most of the time, so performance is still inferior to single-process performance.
+    2. The time consumed by thread scheduling during multi-threaded execution is already negligible with an array length of 262144, so multi-threaded programs perform better than single and multi-process programs.
+    3. The use of locks in multithreading may result in a thread-wait situation, so the performance of programs using locks is not as good as that of programs not using locks
 
 * **Array length: 2097152**
   Single process execution time: 6.291 (ms) the element number is: 10753.
@@ -71,6 +82,6 @@ The following list shows the execution times for different array sizes
 
 
 
-## 结论：
+## Conclusion
 
 
