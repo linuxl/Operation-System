@@ -166,10 +166,11 @@ void multiThreadCalculateExit(int element, int target[], int length,
 
 int main() {
   int m = 200; // the range of number
-  unsigned long N[] = {256,  512,  1024, 2048,
-                       3072, 4096, 8192, 32768}; // the array number
+  unsigned long N[] = {256, 1048576, 2097152}; // the array number
 
-  for (int i = 0; i < 7; i++) {
+  int M[] = {2, 4, 8};
+  for (int i = 0; i < 3; i++)
+  {
     void *num;
     generateData(&num, N[i], m, 1);
     int *number = (int *)num;
@@ -179,13 +180,13 @@ int main() {
     calculate(*(number + 10), number, N[i]);
     printf("------------------------\n");
     printf("multi-process and multi thread result\n");
-    for (int j = 2; j <= 8; j += 2) {
+    for (int j = 0; j <3 ; j++) {
       printf("------------------------\n");
-      multiProcessCalculate(*(number + 10), number, N[i], j);
+      multiProcessCalculate(*(number + 10), number, N[i], M[j]);
       printf("-------------------------\n");
-      multiThreadCalculateLock(*(number + 10), number, N[i], j);
+      multiThreadCalculateLock(*(number + 10), number, N[i], M[j]);
       printf("-------------------------\n");
-      multiThreadCalculateExit(*(number + 10), number, N[i], j);
+      multiThreadCalculateExit(*(number + 10), number, N[i], M[j]);
     }
     printf("------------------------------------------\n");
 
