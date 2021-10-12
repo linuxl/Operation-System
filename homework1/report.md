@@ -9,9 +9,9 @@ output: "homework_1"
 
 ## platform
 
-| CPU information | memory size | kernel version | machine type |
-| :-----: | :----: | :----: | :----: |
-| Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz<br>Core: 2<br>Logic processor: 4   | 12G | 4.15.0-29-generic |physical machine |
+| CPU information | memory size |Operating System| kernel version | machine type |
+| :---: | :-----: | :----: | :----: | :----: |
+| Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz<br>Core: 2<br>Logic processor: 4   | 12G | ubuntu 18.04 |4.15.0-29-generic |physical machine |
 
 ## The measurement result
 
