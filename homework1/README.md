@@ -1,4 +1,2 @@
-
-1. 编译命令 gcc -o hw1 -Wall -std=c99 -lpthread hw.c
-2. 执行过程绑核： taskset -c 
-
+编译命令为： gcc calculateNum.c -lpthread -Wall -std=c99 -o calculateNum
+执行命令为： taskset -c 0,1,2,3 ./calculateNum
