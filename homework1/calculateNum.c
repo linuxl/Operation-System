@@ -175,7 +175,9 @@ int main() {
     generateData(&num, N[i], m, 1);
     int *number = (int *)num;
     // Limit the number of elements to be queried
-    for (int k = 20; k<= 40; k++){
+    srand((unsigned)time(NULL));
+    int randNum = rand() % 240 + 1;
+    for (int k = 20; k<= randNum; k++){
       number[k] = 300;
     }
     printf("--------------array size: %ld----------\n", N[i]);
@@ -194,19 +196,5 @@ int main() {
     }
     free(num);
   }
-  void *num;
-    generateData(&num, N[3], m, 1);
-    int *number = (int *)num;
-    // Limit the number of elements to be queried
-    for (int k = 20; k<= 40; k++){
-      number[k] = 300;
-    }
-    printf("------------------------\n");
-    multiProcessCalculate(300, number, N[3], 10);
-    printf("-------------------------\n");
-    multiThreadCalculateLock(300, number, N[3], 10);
-    printf("-------------------------\n");
-    multiThreadCalculateExit(300, number, N[3], 10);
-    printf("------------------------------------------\n");
   return 0;
 }
