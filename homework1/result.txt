@@ -133,4 +133,49 @@ Multi-Tread (exit) number: 8
 time used: 2.413000 (ms)
 the element number is: 10753
 ------------------------------------------
+--------------array size: 4194304----------
+One process result
+------------------------
+single process
+time used: 12.480000 (ms)
+the element number is: 20941
+------------------------
+multi-process and multi thread result
+------------------------
+Multi-process number: 2
+time used: 9.214000 (ms)
+the element number is: 461
+-------------------------
+Multi-Tread (global) number: 2
+time used: 8.758000 (ms)
+the element number is: 20941
+-------------------------
+Multi-Tread (exit) number: 2
+time used: 8.269000 (ms)
+the element number is: 20941
+------------------------
+Multi-process number: 4
+time used: 5.961000 (ms)
+the element number is: 717
+-------------------------
+Multi-Tread (global) number: 4
+time used: 7.162000 (ms)
+the element number is: 20941
+-------------------------
+Multi-Tread (exit) number: 4
+time used: 4.263000 (ms)
+the element number is: 20941
+------------------------
+Multi-process number: 8
+time used: 8.746000 (ms)
+the element number is: 717
+-------------------------
+Multi-Tread (global) number: 8
+time used: 7.472000 (ms)
+the element number is: 20941
+-------------------------
+Multi-Tread (exit) number: 8
+time used: 5.249000 (ms)
+the element number is: 20941
+------------------------------------------
 
