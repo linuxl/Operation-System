@@ -1,5 +1,6 @@
 .vscode
 .vscode/*
+.clang-format
 ./bin
 /bin/*
 /*/bin
