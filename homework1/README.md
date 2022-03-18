@@ -1,9 +1,9 @@
 ---
-title: "homework 1"
-output: "homework_1"
+title: "Compare process thread execution speed"
+output: "Compare process thread execution speed"
 ---
 
-# Operating System homework 1
+# Compare process thread execution speed
 
 -------
 
